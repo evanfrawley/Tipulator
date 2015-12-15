@@ -7,7 +7,7 @@
         <!--Tipulator-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tipulator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="TipViewController" customModule="Tipulator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,15 +40,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-2h-aGf">
-                                <rect key="frame" x="231" y="93" width="128" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="xsa-vp-wyD"/>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="zgz-IM-fmQ"/>
-                                </connections>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GMK-BR-QIn">
                                 <rect key="frame" x="16" y="340" width="343" height="29"/>
                                 <segments>
@@ -71,6 +62,15 @@
                                 <rect key="frame" x="16" y="222" width="343" height="7"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-2h-aGf">
+                                <rect key="frame" x="231" y="93" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="EMS-mQ-46Z"/>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="xsa-vp-wyD"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -87,16 +87,16 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="billField" destination="Cyp-2h-aGf" id="N3b-Ui-eoo"/>
-                        <outlet property="tipControl" destination="GMK-BR-QIn" id="Ezg-su-QbD"/>
-                        <outlet property="tipLabel" destination="Kpu-Jz-8aL" id="uHm-zx-sOv"/>
-                        <outlet property="totalLabel" destination="7oj-8o-KoY" id="2J8-Dd-7J0"/>
+                        <outlet property="billField" destination="Cyp-2h-aGf" id="DLZ-vN-4pt"/>
+                        <outlet property="tipControl" destination="GMK-BR-QIn" id="d1U-4Y-iOl"/>
+                        <outlet property="tipLabel" destination="Kpu-Jz-8aL" id="hJh-p8-HJ8"/>
+                        <outlet property="totalLabel" destination="7oj-8o-KoY" id="mXX-wj-GJu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="l3B-Hv-2nY">
                     <connections>
-                        <action selector="onTap:" destination="vXZ-lx-hvc" id="a3s-cA-6cK"/>
+                        <action selector="onTap:" destination="vXZ-lx-hvc" id="OSg-BK-yv4"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

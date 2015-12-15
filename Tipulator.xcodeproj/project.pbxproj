@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		927ED0F71C1FFBF900C5F9DA /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */; };
 		928AF78B1C1FD54100543ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF78A1C1FD54100543ECB /* AppDelegate.swift */; };
 		928AF78D1C1FD54100543ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF78C1C1FD54100543ECB /* ViewController.swift */; };
 		928AF7901C1FD54100543ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928AF78E1C1FD54100543ECB /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		928AF7851C1FD54100543ECB /* Tipulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928AF7891C1FD54100543ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928AF78A1C1FD54100543ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				928AF7AE1C1FDF2500543ECB /* SettingsViewController.swift */,
 				928AF78A1C1FD54100543ECB /* AppDelegate.swift */,
 				928AF78C1C1FD54100543ECB /* ViewController.swift */,
+				927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */,
 				928AF78E1C1FD54100543ECB /* Main.storyboard */,
 				928AF7911C1FD54100543ECB /* Images.xcassets */,
 				928AF7931C1FD54100543ECB /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				928AF78D1C1FD54100543ECB /* ViewController.swift in Sources */,
 				928AF78B1C1FD54100543ECB /* AppDelegate.swift in Sources */,
+				927ED0F71C1FFBF900C5F9DA /* TipViewController.swift in Sources */,
 				928AF7AF1C1FDF2500543ECB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				928AF7A61C1FD54100543ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		928AF7A71C1FD54100543ECB /* Build configuration list for PBXNativeTarget "TipulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				928AF7A91C1FD54100543ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
