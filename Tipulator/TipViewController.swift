@@ -66,6 +66,26 @@ class TipViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        onEditingChanged(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        onEditingChanged(animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        onEditingChanged(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        onEditingChanged(animated)
+    }
+    
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)

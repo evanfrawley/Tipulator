@@ -15,6 +15,9 @@
 		928AF7951C1FD54100543ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AF7931C1FD54100543ECB /* LaunchScreen.xib */; };
 		928AF7A11C1FD54100543ECB /* TipulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF7A01C1FD54100543ECB /* TipulatorTests.swift */; };
 		928AF7AF1C1FDF2500543ECB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF7AE1C1FDF2500543ECB /* SettingsViewController.swift */; };
+		92B566141C20E859004880B0 /* PayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B566131C20E859004880B0 /* PayerViewController.swift */; };
+		92B566161C20F44E004880B0 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B566151C20F44E004880B0 /* NameTableViewCell.swift */; };
+		92B5661A1C20F6A6004880B0 /* NameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B566191C20F6A6004880B0 /* NameTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		928AF79F1C1FD54100543ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928AF7A01C1FD54100543ECB /* TipulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipulatorTests.swift; sourceTree = "<group>"; };
 		928AF7AE1C1FDF2500543ECB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		92B566131C20E859004880B0 /* PayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayerViewController.swift; sourceTree = "<group>"; };
+		92B566151C20F44E004880B0 /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		92B566191C20F6A6004880B0 /* NameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameTableViewController.swift; path = ../NameTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				928AF78C1C1FD54100543ECB /* ViewController.swift */,
 				927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */,
 				928AF78E1C1FD54100543ECB /* Main.storyboard */,
+				92B566151C20F44E004880B0 /* NameTableViewCell.swift */,
+				92B566191C20F6A6004880B0 /* NameTableViewController.swift */,
+				92B566131C20E859004880B0 /* PayerViewController.swift */,
 				928AF7911C1FD54100543ECB /* Images.xcassets */,
 				928AF7931C1FD54100543ECB /* LaunchScreen.xib */,
 				928AF7881C1FD54100543ECB /* Supporting Files */,
@@ -218,10 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B566161C20F44E004880B0 /* NameTableViewCell.swift in Sources */,
 				928AF78D1C1FD54100543ECB /* ViewController.swift in Sources */,
 				928AF78B1C1FD54100543ECB /* AppDelegate.swift in Sources */,
 				927ED0F71C1FFBF900C5F9DA /* TipViewController.swift in Sources */,
 				928AF7AF1C1FDF2500543ECB /* SettingsViewController.swift in Sources */,
+				92B5661A1C20F6A6004880B0 /* NameTableViewController.swift in Sources */,
+				92B566141C20E859004880B0 /* PayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
