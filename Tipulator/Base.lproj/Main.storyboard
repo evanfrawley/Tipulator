@@ -58,10 +58,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cne-26-7oh">
-                                <rect key="frame" x="16" y="222" width="343" height="7"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-2h-aGf">
                                 <rect key="frame" x="231" y="93" width="128" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -71,6 +67,10 @@
                                     <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="xsa-vp-wyD"/>
                                 </connections>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cne-26-7oh">
+                                <rect key="frame" x="16" y="222" width="343" height="7"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -111,7 +111,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="986.5" y="402.5"/>
+            <point key="canvasLocation" x="838.5" y="401.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="I2i-iM-oh5">
@@ -188,6 +188,7 @@
                             <outletCollection property="gestureRecognizers" destination="9Qa-fE-M7P" appends="YES" id="hBF-oV-3XJ"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="rhh-Zq-FXx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="averageField" destination="2RQ-uB-q63" id="SDR-c1-3R7"/>
@@ -203,7 +204,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1424.5" y="402.5"/>
+            <point key="canvasLocation" x="1424.5" y="401.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZFB-kQ-8wn">
@@ -222,7 +223,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2a-nc-gzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151.5" y="402.5"/>
+            <point key="canvasLocation" x="-184.6875" y="401.93661971830983"/>
         </scene>
         <!--Payer View Controller-->
         <scene sceneID="8VB-0R-RtD">
@@ -242,14 +243,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obt-fj-qmH">
-                                <rect key="frame" x="115" y="127" width="144" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onNameEntered:" destination="DOe-Kb-SwQ" eventType="editingDidEnd" id="6B5-Oe-beL"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p31-fN-arm">
                                 <rect key="frame" x="150" y="532" width="74" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -270,8 +263,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JaX-kf-P2w">
-                                <rect key="frame" x="34" y="170" width="306" height="347"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Obt-fj-qmH">
+                                <rect key="frame" x="115" y="127" width="144" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="onNameAdded:" destination="DOe-Kb-SwQ" eventType="editingDidEnd" id="hIa-XQ-G7j"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JaX-kf-P2w">
+                                <rect key="frame" x="34" y="165" width="306" height="347"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NameTableViewCell" id="RqD-bQ-5fg" customClass="NameTableViewCell" customModule="Tipulator" customModuleProvider="target">
@@ -287,28 +288,36 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="oEc-4u-bWH" id="LWd-XW-IVQ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pYX-uo-m5V" appends="YES" id="DzU-SJ-JHa"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="0zv-vo-2uy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="nameField" destination="Obt-fj-qmH" id="1Bs-0d-Ceu"/>
-                        <outlet property="payerLabel" destination="vVm-iB-hJM" id="23T-Hx-aID"/>
-                        <outlet property="tableOfNames" destination="JaX-kf-P2w" id="iPD-Hf-DTR"/>
+                        <outlet property="nameField" destination="Obt-fj-qmH" id="oLW-Uf-5XT"/>
+                        <outlet property="payerLabel" destination="vVm-iB-hJM" id="u9g-ET-zXT"/>
+                        <outlet property="tableView" destination="JaX-kf-P2w" id="wTR-AS-mig"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFZ-c2-fY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pYX-uo-m5V">
+                    <connections>
+                        <action selector="onTapAway:" destination="DOe-Kb-SwQ" id="DrU-Mc-XfO"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="568.5" y="402.5"/>
+            <point key="canvasLocation" x="313.5" y="401.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="N7R-A6-VqZ"/>
+        <segue reference="vyC-zf-dwa"/>
     </inferredMetricsTieBreakers>
 </document>
