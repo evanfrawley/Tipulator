@@ -74,6 +74,7 @@ class PayerViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBAction func clearTable(sender: AnyObject) {
         payers = [String]()
         [self.tableView .reloadData()]
+        payerLabel.text = ""
     }
     
     /*
@@ -102,6 +103,13 @@ class PayerViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBAction func onTapAway(sender: AnyObject) {
         view.endEditing(true)
         println(payers)
+    }
+    
+    @IBAction func onChooseButton(sender: AnyObject) {
+    
+        var RNG = Int(arc4random_uniform(UInt32(payers.count)))
+        payerLabel.text = payers[RNG]
+        
     }
     
     

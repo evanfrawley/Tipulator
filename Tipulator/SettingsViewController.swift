@@ -22,6 +22,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        [mehField.becomeFirstResponder()]
+        
         let defaults = NSUserDefaults.standardUserDefaults()
         
         var mehPH = String(format: "%.0f",

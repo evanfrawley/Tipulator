@@ -21,8 +21,20 @@ class TipViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        [billField .becomeFirstResponder()]
+        
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults([
+            "mehValue" : 0.12,
+            "averageValue" : 0.15,
+            "awesomeValue" : 0.20,
+            "godlikeValue" : 0.25
+            
+        ])
+        //test
+        
         
         // Do any additional setup after loading the view.
     }
