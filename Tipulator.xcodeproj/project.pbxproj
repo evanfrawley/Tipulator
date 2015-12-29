@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		925860231C33290F0075C11D /* Swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 925860221C33290F0075C11D /* Swift.gitignore */; };
 		927ED0F71C1FFBF900C5F9DA /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */; };
 		928AF78B1C1FD54100543ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF78A1C1FD54100543ECB /* AppDelegate.swift */; };
 		928AF78D1C1FD54100543ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AF78C1C1FD54100543ECB /* ViewController.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		925860221C33290F0075C11D /* Swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = Swift.gitignore; path = Tipulator/Swift.gitignore; sourceTree = "<group>"; };
 		927ED0F61C1FFBF900C5F9DA /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		928AF7851C1FD54100543ECB /* Tipulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928AF7891C1FD54100543ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				928AF7871C1FD54100543ECB /* Tipulator */,
 				928AF79D1C1FD54100543ECB /* TipulatorTests */,
 				928AF7861C1FD54100543ECB /* Products */,
-				925860221C33290F0075C11D /* Swift.gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,7 +209,6 @@
 			files = (
 				928AF7901C1FD54100543ECB /* Main.storyboard in Resources */,
 				928AF7951C1FD54100543ECB /* LaunchScreen.xib in Resources */,
-				925860231C33290F0075C11D /* Swift.gitignore in Resources */,
 				928AF7921C1FD54100543ECB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
