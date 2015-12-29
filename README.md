@@ -21,6 +21,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Added a "Payer Roulette" feature that randomly chooses (from inputted users) who has to foot the bill!
+* [x] Changed the custom tip amounts to words that the user would be able to associate with the service, as opposed to percentages. These are customizable of course. 
 
 ## Video Walkthrough 
 
@@ -32,11 +33,13 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Since this was my first exposure to iOS development, this project was quite a bit of failing forward. I started by watching videos, reading stackoverflow pages, and googling things. A few times, I even started the entire repository over again because I didn't like how my app was developing. I also wanted to make my submission unique, so I added a whole new feature to the application, which required learning about a whole new section of iOS functionalities. While I feel quite confident in my hard programming coding skills, this project was quite a challenge because I was also learning how to make an intuitive UI while learning a new language and weaving in the coding skills I already had. 
+
+
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2015 Evan Frawley
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
