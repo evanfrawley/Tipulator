@@ -33,8 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Since this was my first exposure to iOS development, this project was quite a bit of failing forward. I started by watching videos, reading stackoverflow pages, and googling things. A few times, I even started the entire repository over again because I didn't like how my app was developing. I also wanted to make my submission unique, so I added a whole new feature to the application, which required learning about a whole new section of iOS functionalities. While I feel quite confident in my hard programming coding skills, this project was quite a challenge because I was also learning how to make an intuitive UI while learning a new language and weaving in the coding skills I already had. 
-
+Since this was my first exposure to iOS development, this project was quite a bit of failing forward. I started by watching videos, reading stackoverflow pages, and googling things. A few times, I even started the entire repository over again because I didn't like how my app was developing. I also wanted to make my submission unique, so I added a whole new feature to the application, which required learning about a whole new section of iOS functionalities. While I feel quite confident in my hard programming coding skills, this project was quite a challenge because I was learning how to make an intuitive UI while learning a new language while at the school library (my primary access to a Mac system!). Nonetheless, it was a great opportunity to dive right into iOS dev and fulfilled my long standing desire to make an iPhone app.
 
 
 ## License
