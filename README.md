@@ -1,10 +1,10 @@
-# Pre-work - Tipulator
+# Pre-work - *Tipulator*
 
-*Tipulator* is a tip calculator application for iOS.
+**Tipulator** is a tip calculator application for iOS.
 
-Submitted by: *Evan Frawley*
+Submitted by: **Evan Frawley**
 
-Time spent: *10-12* hours spent in total
+Time spent: **10-12** hours spent in total
 
 ## User Stories
 
