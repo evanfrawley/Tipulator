@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
     
     
@@ -21,17 +21,17 @@ class PayerViewController: UIViewController, UITableViewDataSource, UITableViewD
     var newPayer: String = ""
     
     @IBOutlet weak var tableView: UITableView!
+    
     let textCellIdentifier = "TextCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "TextCell")
+        self.nameField.delegate = self
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        var tableSize = 0
     
         nameField.placeholder = "Name..."
         // Do any additional setup after loading the view.
@@ -62,12 +62,20 @@ class PayerViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
+        
         println(payers[row])
+        
     }
 
+    @IBAction func clearTable(sender: AnyObject) {
+        payers = [String]()
+        [self.tableView .reloadData()]
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -78,11 +86,18 @@ class PayerViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     */
     
-    
+    func textFieldShouldReturn(nameField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false;
+    }
+
     @IBAction func onNameAdded(sender: AnyObject) {
         newPayer = NSString(string: nameField.text!) as String
         payers.append(newPayer)
+        [self.tableView .reloadData()]
+        nameField.text = ""
     }
+    
     
     @IBAction func onTapAway(sender: AnyObject) {
         view.endEditing(true)
